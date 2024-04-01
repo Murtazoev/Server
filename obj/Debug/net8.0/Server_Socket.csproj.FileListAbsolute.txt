@@ -1,0 +1,15 @@
+D:\Projects\C#\Server_Socket\Server_Socket\bin\Debug\net8.0\Server_Socket.exe
+D:\Projects\C#\Server_Socket\Server_Socket\bin\Debug\net8.0\Server_Socket.deps.json
+D:\Projects\C#\Server_Socket\Server_Socket\bin\Debug\net8.0\Server_Socket.runtimeconfig.json
+D:\Projects\C#\Server_Socket\Server_Socket\bin\Debug\net8.0\Server_Socket.dll
+D:\Projects\C#\Server_Socket\Server_Socket\bin\Debug\net8.0\Server_Socket.pdb
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.AssemblyInfoInputs.cache
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.AssemblyInfo.cs
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.dll
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\refint\Server_Socket.dll
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.pdb
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.genruntimeconfig.cache
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\ref\Server_Socket.dll
+D:\Projects\C#\Server_Socket\Server_Socket\obj\Debug\net8.0\Server_Socket.sourcelink.json
