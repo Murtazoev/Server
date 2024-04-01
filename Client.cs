@@ -14,7 +14,7 @@ namespace Server_Socket
         public int Id;
         public Socket socket;
 
-        private int newID = 0;
+        private static int newID = 0;
         public void GetNewID()
         {
             Id = newID;

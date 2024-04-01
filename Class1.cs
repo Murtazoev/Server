@@ -15,25 +15,35 @@ namespace Server_Socket
         static IPEndPoint ipEND = new IPEndPoint(0 , 1234);
         static Client newClient;
         List<Client> clients;
-        public void Start()
+        public async void Start()
         {
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             server.Bind(ipEND);
             server.Listen(1000);
             Console.WriteLine("Server Started !");
+            clients = new List<Client>();
+            newClient = new Client();
+            newClient.GetNewID();
         }
 
         public async void AcceptCalls()
         {
+            newClient.socket = await server.AcceptAsync();
+            if (newClient.socket == null)
+                return;
+            clients.Add(newClient); /// Clients was zero !
+            Console.WriteLine("Client Connected !");
+            /*
             Client newClient;
             newClient = new Client();
-            await server.AcceptAsync(newClient.socket);
+            await server.AcceptAsync(newClient.socket); 
             if (newClient.socket == null)
                 return;
             Console.WriteLine("Connected !");
             newClient.GetNewID();
             clients.Add(newClient);
             Console.WriteLine("Client " + newClient.Id + " : Connected !");
+            */
         }
         public void Greeting()
         {
@@ -42,12 +52,14 @@ namespace Server_Socket
         public void Update()
         {
             AcceptCalls();
-            if (clients != null)
+            // if (client != null)
                 ReceiveMessages();
         }
 
         private async void ReceiveMessages()
         {
+            if (clients.Count == 0)
+                return;
             foreach (Client i in clients)
             {
                 byte[] buffer = new byte[1024];
